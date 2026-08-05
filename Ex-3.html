@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photography Portfolio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,serif;background:linear-gradient(135deg,#eef6ff,#d9e8ff);color:#333}
+header{background:linear-gradient(90deg,#4b2dbd,#7b5cff);color:#fff;padding:40px;text-align:center;text-shadow:2px 2px 5px #000}
+nav{background:#222;text-align:center;padding:15px;position:sticky;top:0}
+nav a{color:#fff;text-decoration:none;padding:10px 18px;margin:5px;background:#444;border-radius:20px;display:inline-block}
+nav a:hover{background:#ff9800}
+.container{width:90%;margin:auto}
+section{background:#fff;margin:25px 0;padding:25px;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,.2)}
+h2{text-align:center;color:#4b2dbd;letter-spacing:2px;text-decoration:underline;text-shadow:1px 1px 3px gray;margin-bottom:15px}
+p{text-align:justify;line-height:1.8}
+img,video,audio,iframe,embed{display:block;margin:20px auto}
+img{width:85%;border-radius:10px}
+table{width:100%;border-collapse:collapse}
+th,td{border:1px solid #888;padding:10px;text-align:center}
+th{background:#4b2dbd;color:#fff}
+.features{column-count:2;column-gap:30px}
+.features div{background:#f5f5ff;padding:15px;margin-bottom:15px;border-left:5px solid #4b2dbd}
+fieldset{border:2px solid #4b2dbd;padding:20px;border-radius:10px}
+label{display:block;margin-top:10px;font-weight:bold}
+input,select,textarea{width:100%;padding:8px;margin-top:5px}
+input[type=radio],input[type=checkbox]{width:auto}
+input[type=submit],input[type=reset]{width:auto;padding:10px 20px;margin-top:15px}
+footer{background:#222;color:#fff;text-align:center;padding:20px}
+</style>
+</head>
+<body>
+
+<header id="top">
+<h1>📸 Photography Portfolio</h1>
+<p>Capture Every Moment • Preserve Every Memory</p>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#gallery">Gallery</a>
+<a href="#media">Media</a>
+<a href="#services">Services</a>
+<a href="#booking">Booking</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+<!-- About -->
+<section id="about">
+<h2>About Our Studio</h2>
+<p>Welcome to our Photography Portfolio. We provide professional Wedding, Portrait, Wildlife, Travel and Fashion Photography with creative editing, cinematic videos and premium albums. Our mission is to preserve your beautiful memories forever.</p>
+</section>
+
+<!-- Image -->
+<section id="gallery">
+<h2>Featured Photograph</h2>
+<a href="https://www.pexels.com" target="_blank">
+<img src="https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg" alt="Photography">
+</a>
+
+<h2>Photography Packages</h2>
+<table>
+<tr><th>Category</th><th>Location</th><th>Price</th></tr>
+<tr><td>Wedding</td><td>Outdoor</td><td>₹25,000</td></tr>
+<tr><td>Portrait</td><td>Studio</td><td>₹5,000</td></tr>
+<tr><td>Nature</td><td>Hills</td><td>₹8,000</td></tr>
+<tr><td>Wildlife</td><td>Forest</td><td>₹12,000</td></tr>
+</table>
+</section>
+
+<!-- CSS Multi Column -->
+<section id="services">
+<h2>Why Choose Us?</h2>
+<div class="features">
+<div><h3>Professional Cameras</h3><p>Latest DSLR & Mirrorless Cameras.</p></div>
+<div><h3>Creative Editing</h3><p>Premium cinematic editing.</p></div>
+<div><h3>Affordable Packages</h3><p>Budget friendly plans.</p></div>
+<div><h3>Fast Delivery</h3><p>Albums delivered on time.</p></div>
+</div>
+</section>
+
+<!-- Media -->
+<section id="media">
+<h2>HTML5 Media Elements</h2>
+
+<h3>Background Music</h3>
+<audio controls>
+<source src="Lenin - Vaarevaa Vaarevaa Song Bgm.mp3" type="audio/mpeg">
+</audio>
+
+<h3>Portfolio Video</h3>
+<video width="750" controls>
+<source src="11556237-hd_1920_1080_25fps.mp4" type="video/mp4">
+</video>
+
+<h3>YouTube Photography Video</h3>
+<iframe width="750" height="420" src="https://www.youtube.com/embed/aqz-KE-bpKQ" allowfullscreen></iframe>
+
+<h3>Photography Brochure</h3>
+<embed src="Photography_Portfolio_Brochure.pdf" width="750" height="450" type="application/pdf">
+</section>
+
+<!-- Form -->
+<section id="booking">
+<h2>Photography Booking Form</h2>
+<form>
+<fieldset>
+<legend><b>Customer Details</b></legend>
+
+<label>Full Name</label><input type="text" required>
+<label>Email</label><input type="email" required>
+<label>Phone</label><input type="tel">
+<label>Password</label><input type="password">
+<label>Event Date</label><input type="date">
+<label>Event Time</label><input type="time">
+<label>Guests</label><input type="number">
+
+<label>Photography Type</label>
+<select>
+<option>Wedding</option>
+<option>Portrait</option>
+<option>Nature</option>
+<option>Wildlife</option>
+<option>Fashion</option>
+</select>
+
+<label>Gender</label>
+<input type="radio" name="g"> Male
+<input type="radio" name="g"> Female
+
+<label>Additional Services</label>
+<input type="checkbox"> Drone
+<input type="checkbox"> Album
+<input type="checkbox"> Cinematic Video
+
+<label>Upload Reference Image</label>
+<input type="file">
+
+<label>Budget</label>
+<input type="range">
+
+<label>Special Instructions</label>
+<textarea rows="5"></textarea>
+
+<label>Booking Progress</label>
+<progress value="65" max="100"></progress><br>
+
+<input type="submit" value="Book Now">
+<input type="reset" value="Reset">
+</fieldset>
+</form>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<p><b>Email:</b> <a href="mailto:photography@gmail.com">photography@gmail.com</a></p>
+<p><b>Phone:</b> <a href="tel:+919676155502">+91 9676155502</a></p>
+<p style="text-align:center"><a href="#top">⬆ Back to Top</a></p>
+</section>
+
+</div>
+
+<footer>
+© 2026 Photography Portfolio
+</footer>
+
+</body>
+</html>
